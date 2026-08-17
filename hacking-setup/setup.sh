@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$SCRIPT_DIR/lib/helpers.sh"
@@ -7,6 +7,8 @@ source "$SCRIPT_DIR/modules/recon.sh"
 source "$SCRIPT_DIR/modules/revbin.sh"
 source "$SCRIPT_DIR/modules/dependencies.sh"
 source "$SCRIPT_DIR/modules/net.sh"
+
+print_banner
 
 log "Preparing installation..."
 
