@@ -6,6 +6,7 @@ source "$SCRIPT_DIR/lib/helpers.sh"
 source "$SCRIPT_DIR/modules/recon.sh"
 source "$SCRIPT_DIR/modules/revbin.sh"
 source "$SCRIPT_DIR/modules/dependencies.sh"
+source "$SCRIPT_DIR/modules/net.sh"
 
 log "Preparing installation..."
 
@@ -19,3 +20,4 @@ log "Starting Hacking Setup"
 run_dependencies
 run_recon
 run_revbin
+run_net
