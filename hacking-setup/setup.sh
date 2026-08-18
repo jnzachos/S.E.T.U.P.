@@ -21,7 +21,7 @@ fi
 log "Starting Hacking Setup"
 
 run_dependencies
+run_editors
 run_recon
 run_revbin
 run_net
-run_editors

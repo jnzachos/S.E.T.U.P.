@@ -1,11 +1,11 @@
 #! /usr/bin/env/ bash
 
-run_editors(){
+run_editors() {
 
     install_apt nano
     install_neovim
     install_vscode
-    
+
 }
 
 install_neovim() {
