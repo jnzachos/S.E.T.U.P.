@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 run_recon() {
-    log "Setting up reconnaisanc tools..."
+    log "Setting up reconnaisance tools..."
     install_apt nmap
     install_apt gobuster
     install_apt ffuf
