@@ -14,7 +14,7 @@ install_apt() {
     fi
 
     log "Installing $pkg..."
-    if ! sudo apt update -qq && sudo apt install -qy "$pkg" >/dev/null 2>&1; then
+    if ! sudo apt-get update -qq && sudo apt-get install -qy "$pkg" >/dev/null 2>&1; then
         err "Failed to install $pkg"
         return 1
     fi
