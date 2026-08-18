@@ -2,6 +2,8 @@
 
 run_editors() {
 
+    log "Setting up text editors"
+
     install_apt nano
     install_neovim
     install_vscode
