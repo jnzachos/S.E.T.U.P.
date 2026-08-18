@@ -11,7 +11,7 @@ run_editors() {
 install_neovim() {
     if command -v nvim &>/dev/null; then
         info "Neovim already installed, skipping"
-        return
+        return 1
     fi
 
     log "Installing Neovim..."
@@ -24,7 +24,7 @@ install_neovim() {
     sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
     
     if [[ -L /usr/local/bin/nvim ]]; then
-        info "Symbolic link for penelope already exists."
+        info "Symbolic link for Neovim already exists."
     else
         if ! sudo ln -s /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim; then
             err "Failed to create symbolic link for Neovim"
