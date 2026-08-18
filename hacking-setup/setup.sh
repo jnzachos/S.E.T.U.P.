@@ -8,6 +8,7 @@ source "$SCRIPT_DIR/modules/revbin.sh"
 source "$SCRIPT_DIR/modules/dependencies.sh"
 source "$SCRIPT_DIR/modules/net.sh"
 source "$SCRIPT_DIR/modules/editors.sh"
+source "$SCRIPT_DIR/modules/exploit.sh"
 
 print_banner
 
@@ -25,3 +26,4 @@ run_editors
 run_recon
 run_revbin
 run_net
+run_exploit
