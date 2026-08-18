@@ -2,7 +2,7 @@
 
 run_dependencies() {
     log "Updating package lists..."
-    sudo apt-get update -qq 2>/dev/null
+    sudo apt-get update -qq
 
     log "Installing dependencies..."
 
