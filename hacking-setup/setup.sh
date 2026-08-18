@@ -17,9 +17,6 @@ if ! sudo -v; then
     exit 1
 fi
 
-log "Updating package lists..."
-sudo apt-get update -qq >/dev/null 2>&1
-
 log "Starting Hacking Setup"
 
 run_dependencies
