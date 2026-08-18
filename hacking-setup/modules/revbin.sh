@@ -19,7 +19,7 @@ install_pwndbg() {
         info "pwndbg already installed, skipping"
     else
         log "Installing pwndbg..."
-        if ! curl --proto '=https' --tlsv1.2 -LsSf 'https://install.pwndbg.re' | sh -s -- -t pwndbg-gdb >/dev/null 2>&1; then
+        if ! curl --proto '=https' --tlsv1.2 -LsSf 'https://install.pwndbg.re' | sh -s -- -t pwndbg-gdb 2>/dev/null; then
             err "Pwndbg installation failed."
             return 1
         fi
