@@ -23,3 +23,4 @@ run_dependencies
 run_recon
 run_revbin
 run_net
+run_editors
