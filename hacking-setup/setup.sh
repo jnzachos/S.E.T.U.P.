@@ -27,3 +27,5 @@ run_recon
 run_revbin
 run_net
 run_exploit
+
+log "Finished"
