@@ -12,6 +12,10 @@ run_revbin() {
     install_apt checksec
 
     install_ROPgadget
+
+    install_apt ltrace
+    install_apt strace
+    install_apt binwalk
 }
 
 install_pwndbg() {
