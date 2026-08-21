@@ -6,7 +6,7 @@ run_dependencies() {
 
     log "Installing dependencies..."
 
-    # Check Python 3
+    # Python 3
     if command -v python3 &>/dev/null; then
         info "Python 3 already installed"
     else
@@ -14,7 +14,7 @@ run_dependencies() {
         install_apt python3
     fi
 
-    # Check Python Pip
+    # Python Pip
     if command -v pip3 &>/dev/null; then
         info "python3-pip already installed"
     else
@@ -22,7 +22,7 @@ run_dependencies() {
         install_apt python3-pip
     fi
 
-    # Check Java (OpenJDK 21)
+    # Java (OpenJDK 21)
     if command -v java &>/dev/null && java -version 2>&1 | grep -q "21"; then
         info "OpenJDK 21 already installed"
     else
@@ -30,7 +30,7 @@ run_dependencies() {
         install_apt openjdk-21-jdk
     fi
 
-    # Check Unzip
+    # unzip
     if command -v unzip &>/dev/null; then
         info "unzip already installed"
     else
@@ -38,7 +38,7 @@ run_dependencies() {
         install_apt unzip
     fi
 
-    # Check Wget
+    # wget
     if command -v wget &>/dev/null; then
         info "wget already installed"
     else
@@ -46,7 +46,7 @@ run_dependencies() {
         install_apt  wget
     fi
 
-    # Check Curl
+    # curl
     if command -v curl &>/dev/null; then
         info "curl already installed"
     else
@@ -54,7 +54,7 @@ run_dependencies() {
         install_apt curl
     fi
 
-    # Check Git
+    # git
     if command -v git &>/dev/null; then
         info "git already installed"
     else
