@@ -10,6 +10,8 @@ source "$SCRIPT_DIR/modules/net.sh"
 source "$SCRIPT_DIR/modules/editors.sh"
 source "$SCRIPT_DIR/modules/exploit.sh"
 
+auto_update
+
 print_banner
 
 log "Preparing installation..."
