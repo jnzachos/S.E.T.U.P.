@@ -10,6 +10,9 @@ source "$SCRIPT_DIR/modules/net.sh"
 source "$SCRIPT_DIR/modules/editors.sh"
 source "$SCRIPT_DIR/modules/exploit.sh"
 
+CLEANUP=false
+[[ "${1:-}" == "--cleanup" ]] && CLEANUP=true
+
 print_banner
 
 log "Preparing installation..."
@@ -29,3 +32,8 @@ run_net
 run_exploit
 
 log "Finished"
+
+if $CLEANUP; then
+    cd "$SCRIPT_DIR/.." && rm -rf "$SCRIPT_DIR"
+    log "Repo removed. Run 'cd' to leave the deleted directory."
+fi
