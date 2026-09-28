@@ -35,5 +35,5 @@ log "Finished"
 
 if $CLEANUP; then
     cd "$SCRIPT_DIR/.." && rm -rf "$SCRIPT_DIR"
-    log "Repo removed. Run 'cd' to leave the deleted directory."
+    warn "Repo removed. Run 'cd' to leave the deleted directory."
 fi
