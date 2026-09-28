@@ -31,13 +31,12 @@ cd S.E.T.U.P./hacking-setup
 ./setup.sh
 ```
 
-4. **Clean up (Optional):**
-
-    Once the script finishes, you can safely remove the cloned repository from your system:
+4. **Automatic clean up (Optional):**
 
 ```bash
-   cd ../.. && rm -rf S.E.T.U.P.
+   ./setup.sh --cleanup
 ```
+By using this argument, the repository will be automatically removed after execution ends.
 
 ## Notes
 > **IMPORTANT NOTICE:** This script is currently under development. It is not final and is not guaranteed to work flawlessly.
