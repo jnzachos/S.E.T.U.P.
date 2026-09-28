@@ -34,7 +34,7 @@ cd S.E.T.U.P./hacking-setup
 4. **Automatic clean up (Optional):**
 
 ```bash
-   ./setup.sh --cleanup
+./setup.sh --cleanup
 ```
 By using this argument, the repository will be automatically removed after execution ends.
 
